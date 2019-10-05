@@ -48,8 +48,8 @@ var systemTemplate = {
 
 
                 <div class="p-a-md">
-                    	<h5>Latest Milestone Index: </h5><h3 class="_700 m-y">  {{nodeInfo.latestMilestoneIndex}} <span class="h6">({{nodeInfo.latestMilestone}})</span>	</h3> 
-                    	<h5>Latest Solid Milestone Index: </h5><h3 class="_700 m-y">  {{nodeInfo.latestSolidSubtangleMilestoneIndex}} <span class="h6">({{nodeInfo.latestSolidSubtangleMilestone}})</span>	</h3> 
+                    	<h5>Latest Miilestone Index: </h5><h3 class="_700 m-y">  {{nodeInfo.latestMilestoneIndex}} <span class="h6">({{nodeInfo.latestMilestone}})</span>	</h3> 
+                    	<h5>Latest Solid Milestone Index: </h5><h3 class="_700 m-y">  {{nodeInfo.latestSolidSubtangleMilestoneIndex}} ({{nodeInfo.latestSolidSubtangleMilestoneIndex-nodeInfo.latestMilestoneIndex}})<span class="h6">({{nodeInfo.latestSolidSubtangleMilestone}})</span>	</h3> 
             			<div class="h5">
                 			<strong>Tips:</strong>
             				{{nodeInfo.tips}} 
