@@ -99,7 +99,7 @@ var systemTemplate = {
     showNeighbors: function (event){
         var n = "";
         vm.peers.forEach(function(peer){
-           n +=  peer.connectionType + "://" + peer.address + "\n"; 
+           n +=  peer.connectionType + "://" + peer.domain + ":" + peer.address.split(":")[1] + "\n"; 
         });
         var  display = "<pre class='code-preview text-left p-a'>"+ n + "</pre>";
 		swal({
